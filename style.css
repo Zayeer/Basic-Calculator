@@ -1,0 +1,164 @@
+* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		@font-face {
+			font-family: "DJ Get Digital";
+			src: url(DjbGetDigital-6G5g.ttf);
+		}
+
+		body {
+			display: grid;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			background: #000;
+		}
+
+		.container {
+			border: 10px solid #fc3d03;
+			height: 65vh;
+			width: 70vh;
+			display: grid;
+			border-radius: 15px; 
+		}
+
+		.screen {
+			margin: 5px 0 0 3.5px;
+			display: grid;
+			width: 65.5vh;
+			border-bottom: 2px solid red;
+			height: 15vh;
+			border-radius: 15px;
+			display: flex;
+			justify-content: flex-end;
+			background-color: black;
+		}
+
+		span {
+			font-size: 2em;
+			display: grid;
+			border-radius: 10px;
+			height: 14vh;
+			align-items: flex-end;
+			margin-right: 5px;
+			max-width: 60vh;
+			overflow: hidden;
+			color: red;
+			font-family: "DJ Get Digital";
+			text-align: left;
+		}
+
+		.buttons {
+			width: 95%;
+			height: 90%;
+			margin: 10px 0 100px 11px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(5, 1fr);
+			grid-template-areas:
+			"ac del - by"
+			"seven eight nine into"
+			"four five six minus"
+			"one two three plus"
+			"dot zero equal equal";
+			grid-gap: 5px;
+		}
+
+
+		button {
+			border-radius: 20px;
+			border: 3px solid red;
+			color: red;
+			box-shadow: 0 3px red;
+		}
+
+		button:hover {
+			cursor: pointer;
+			box-shadow: 0 3px red;
+			background-color: black;
+		}
+
+		button:active {
+			box-shadow: 0 0 red;
+		}
+
+		button:focus {
+			outline: none;
+		}
+
+
+
+		#zero {
+			grid-area: zero;
+		}
+
+		#clear {
+			grid-area: ac;
+		}
+
+		#delete {
+			grid-area: del;
+		}
+
+		#by {
+			grid-area: by;
+		}
+
+		#point {
+			grid-area: dot;
+		}
+
+		#plus {
+			grid-area: plus;
+		}
+
+		#minus {
+			grid-area: minus;
+		}
+
+		#into {
+			grid-area: into;
+		}
+
+		#one {
+			grid-area: one;
+		}
+
+		#two {
+			grid-area: two;
+		}
+
+		#three {
+			grid-area: three;
+		}
+
+		#four {
+			grid-area: four;
+		}
+
+		#five {
+			grid-area: five;
+		}
+
+		#six {
+			grid-area: six;
+		}
+
+		#seven {
+			grid-area: seven;
+		}
+
+		#eight {
+			grid-area: eight;
+		}
+
+		#nine {
+			grid-area: nine;
+		}
+
+		#equal {
+			grid-area: equal;
+		}
